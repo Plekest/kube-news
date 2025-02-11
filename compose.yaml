@@ -11,10 +11,6 @@ services:
       - postgre_docker_vol:/var/lib/postgresql/data
     networks:
       - kube_news_net
-  web:
-    extends:
-      file: ./kube-news.compose.yaml
-      service: kube_news
 
 volumes:
   postgre_docker_vol:
